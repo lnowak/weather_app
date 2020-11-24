@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.hidden{
+  display: none;
+}
+
 .App {
   text-align: center;
   height: 100vh;
@@ -30,6 +34,7 @@
   width: 2rem;
   height: 2rem;
   cursor: pointer;
+  z-index: 4;
 }
 
 .header__button__line {
@@ -41,22 +46,13 @@
   transition: all 0.3s linear;
 }
 
-/* .header__button__line:first-child {
-  transform: rotate(0);
-}
-
-.header__button__line:nth-child(2) {
-  transform: translateX(0);
-  opacity: 1;
-} */
-
 .header__button__line:nth-child(3) {
   transform: rotate(0);
 }
 
 .header__button__line--active {
   height: 0.25rem;
-  background-color: rgb(245, 4, 4);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   width: 2rem;
   position: relative;
@@ -81,4 +77,37 @@
 .header__title {
   font-size: 1.5rem;
   margin: auto;
+}
+
+.slider {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: open 0.3s linear;
+}
+
+@keyframes open {
+  0% {transform: translateX(-250px);}
+  100% {transform: translateX(0);}
+}
+
+.slider--hidden {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: close 0.3s linear;
+}
+
+@keyframes close {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-250px);}
+}
+
+.slider__title {
+  margin: 8px 0 11px 50px; 
+  color: rgba(255, 255, 255, 0.8);
 }
