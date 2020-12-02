@@ -3,10 +3,10 @@ import CurrentWeatherArea from './CurrentWeatherArea';
 import UpcomingWeatherArea from './UpcomingWeatherArea';
 
 
-function AppBody() {
+function AppBody({searchedCity, setSearchedCity, currWeather, setCurrWeather}) {
     return (
       <div className="appBody">
-          <FormArea />
+          <FormArea searchedCity={searchedCity} setSearchedCity={setSearchedCity} currWeather={currWeather} setCurrWeather={setCurrWeather}/>
           <CurrentWeatherArea />
           <UpcomingWeatherArea />
       </div>
