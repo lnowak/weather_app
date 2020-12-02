@@ -1,7 +1,14 @@
+import FormArea from './FormArea';
+import CurrentWeatherArea from './CurrentWeatherArea';
+import UpcomingWeatherArea from './UpcomingWeatherArea';
+
+
 function AppBody() {
     return (
       <div className="appBody">
-          app body
+          <FormArea />
+          <CurrentWeatherArea />
+          <UpcomingWeatherArea />
       </div>
     );
   }
