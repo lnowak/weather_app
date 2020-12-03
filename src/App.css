@@ -163,5 +163,31 @@
 .currentWeatherArea {
   height: 70%;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 
+}
+
+.currentWeatherArea__cityDetails {
+  width: 100%;
+  height: 15%;
+  border: 1px solid green;
+}
+
+.currentWeatherArea__weather {
+  height: 60%;
+  width: 50%;
+  border: 1px solid red;
+}
+
+.currentWeatherArea__weatherDetails {
+  height: 60%;
+  width: 50%;
+  border: 1px solid blue;
+}
+
+.currentWeatherArea__hourlyWeather {
+  height: 25%;
+  width: 100%;
+  border: 1px solid yellow;
 }

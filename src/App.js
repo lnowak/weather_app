@@ -24,11 +24,9 @@ function App() {
       setCurrWeather(data)
     })
     .catch(err => {
-      console.log(err)
+      console.log(err);
     })
-    // console.log('szukam');
     console.log(currWeather);
-    // console.log('znalazłem');
   }
 
   return (
