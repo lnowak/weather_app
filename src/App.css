@@ -22,8 +22,6 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  /* padding-right: 40%; */
-  border: 1px solid red;
   padding: 0 5% 0 2%;
 }
 
@@ -99,7 +97,7 @@
   position: fixed;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  animation: close 0.3s linear;
+  animation: close 0.31s linear;
 }
 
 @keyframes close {
@@ -110,4 +108,50 @@
 .slider__title {
   margin: 8px 0 11px 50px; 
   color: rgba(255, 255, 255, 0.8);
+}
+
+.appBody {
+  height: 90%;
+  width: 100%;
+}
+
+.formArea {
+  height: 5%;
+  width: 100%;
+}
+
+.formArea__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.formArea__form__textInput {
+  height: 75%;
+  width: 40%;
+  border-radius: 20px;
+  outline: transparent;
+  border: none;
+  padding-left: 20px;
+  font-size: 14px;
+  margin-left: 40px;
+}
+
+.formArea__form__submitInput {
+  height: 75%;
+  width: 40px;
+  position: relative;
+  left: -40px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  outline: transparent;
+}
+
+.fa-search {
+  height: 60%;
+  width: 60%;
+  color: grey;
+  cursor: pointer;
 }

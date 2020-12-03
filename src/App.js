@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 
 import './App.css';
 
@@ -14,10 +14,9 @@ function App() {
   const [searchedCity, setSearchedCity] = useState('');
   const [currWeather, setCurrWeather] = useState(false);
 
-  useEffect(() => {
+  const weatherSearch = () => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchedCity}&appid=694e3df194be037f1760c032ec19d8f0`)
     .then(resp => {
-      console.log(resp)
       return resp.json();
     })
     .then(data => {
@@ -26,13 +25,16 @@ function App() {
     .catch(err => {
       console.log(err)
     })
-  }, [searchedCity])
+    // console.log('szukam');
+    console.log(currWeather);
+    // console.log('znalazłem');
+  }
 
   return (
     <div className="App">
       <Header menuActive={menuActive} setMenuActive={setMenuActive} hideSlider={hideSlider} setHideSlider={setHideSlider}/>
       <Slider menuActive={menuActive} hideSlider={hideSlider}/>
-      <AppBody searchedCity={searchedCity} setSearchedCity={setSearchedCity} currWeather={currWeather} setCurrWeather={setCurrWeather}/>
+      <AppBody weatherSearch={weatherSearch} searchedCity={searchedCity} setSearchedCity={setSearchedCity} currWeather={currWeather} setCurrWeather={setCurrWeather}/>
     </div>
   );
 }
