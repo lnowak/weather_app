@@ -82,7 +82,7 @@
   width: 250px;
   position: fixed;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   animation: open 0.3s linear;
 }
 
@@ -116,7 +116,7 @@
 }
 
 .formArea {
-  height: 5%;
+  height: 10%;
   width: 100%;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .formArea__form__textInput {
-  height: 75%;
+  height: 45%;
   width: 40%;
   border-radius: 20px;
   outline: transparent;
@@ -139,7 +139,7 @@
 }
 
 .formArea__form__submitInput {
-  height: 75%;
+  height: 45%;
   width: 40px;
   position: relative;
   left: -40px;
@@ -150,8 +150,18 @@
 }
 
 .fa-search {
-  height: 60%;
-  width: 60%;
-  color: grey;
+  height: 50%;
+  width: 50%;
+  color: rgb(128, 128, 128);
   cursor: pointer;
+}
+
+.fa-search:hover {
+  color: rgb(0, 0, 0);
+}
+
+.currentWeatherArea {
+  height: 70%;
+  width: 100%;
+
 }

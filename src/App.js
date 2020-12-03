@@ -5,6 +5,7 @@ import './App.css';
 import Header from './Components/Header';
 import Slider from './Components/Slider';
 import AppBody from './Components/AppBody';
+import apiKey from './apiKey';
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
   const [currWeather, setCurrWeather] = useState(false);
 
   const weatherSearch = () => {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchedCity}&appid=694e3df194be037f1760c032ec19d8f0`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchedCity}&appid=${apiKey}`)
     .then(resp => {
       return resp.json();
     })

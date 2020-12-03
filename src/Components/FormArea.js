@@ -5,7 +5,7 @@ function FormArea({searchedCity, setSearchedCity, currWeather, setCurrWeather, w
     const handleSubmit = e => {
         e.preventDefault();
         weatherSearch();
-        // console.log(currWeather, currWeather.cod);
+        setSearchedCity(() => '');
     }
 
     return (
