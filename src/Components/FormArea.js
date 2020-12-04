@@ -6,6 +6,7 @@ function FormArea({searchedCity, setSearchedCity, currWeather, setCurrWeather, w
         e.preventDefault();
         weatherSearch();
         setSearchedCity(() => '');
+
     }
 
     return (

@@ -172,12 +172,31 @@
   width: 100%;
   height: 15%;
   border: 1px solid green;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.currentWeatherArea__cityDetails__name {
+  font-size: 25px;
+  font-weight: 500;
+  
 }
 
 .currentWeatherArea__weather {
   height: 60%;
   width: 50%;
   border: 1px solid red;
+}
+
+.currentWeatherArea__weather__weatherData__temp {
+  font-size: 120px;
+  color: rgb(255, 255, 255);
+}
+
+.currentWeatherArea__weather__weatherData__desc {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
 }
 
 .currentWeatherArea__weatherDetails {
