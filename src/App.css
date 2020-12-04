@@ -171,7 +171,7 @@
 .currentWeatherArea__cityDetails {
   width: 100%;
   height: 15%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -186,7 +186,14 @@
 .currentWeatherArea__weather {
   height: 60%;
   width: 50%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentWeatherArea__weather__icon {
+  width: 50%;
 }
 
 .currentWeatherArea__weather__weatherData__temp {
@@ -195,7 +202,7 @@
 }
 
 .currentWeatherArea__weather__weatherData__desc {
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(255, 255, 255);
 }
 
